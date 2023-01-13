@@ -46,7 +46,12 @@ public class preExam33bTest {
         assertEquals(expected, actual);
     }
 
-    public void testExercise3() {
+    @Test
 
+    public void testExercise3() {
+        List<String> actual = preExam33b.exercise3(16);
+        List<String> expected = new ArrayList<>
+                (Arrays.asList("1", "2", "fizz", "4", "buzz", "fizz", "7", "8", "fizz", "buzz", "11", "fizz", "13", "14", "fizzbuz", "16"));
+        assertEquals(expected, actual);
     }
 }

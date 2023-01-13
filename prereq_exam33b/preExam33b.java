@@ -52,4 +52,23 @@ public class preExam33b {
      * 1, 2, fizz, 4, buzz, fizz, 7, 8, fizz, buzz, 11, fizz, 13, 14, fizzbuz, 16
      * Write a program that prints the fizzbuzz sequence for the first 200 numbers.
      */
+
+    public static ArrayList<String> exercise3(int k) {
+        ArrayList a = new ArrayList<String>();
+        for (int i = 1 ; i < k + 1; i++) {
+            if (i % 3 == 0 && i % 5 ==0) {
+                a.add("fizzbuz");
+            }
+            else if (i % 3 == 0) {
+                a.add("fizz");
+            }
+            else if (i % 5 == 0) {
+                a.add("buzz");
+            }
+            else {
+                a.add(String.valueOf(i));
+            }
+        }
+        return a;
+    }
 }
